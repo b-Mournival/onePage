@@ -131,23 +131,20 @@ padding: 0.5rem 1rem; }
     z-index: 999;
     animation: overlay 3s;
     animation-delay: 0.5s;
+    animation-fill-mode: backwards;
 }
 
 @keyframes logo {
     0% {
         position: relative;
-        top: 0;
-    }
-    50% {
-        top: -200px;
-        transform: rotate(360deg);
     }
     100% {
-        top: 0;
+        transform: rotate(360deg);
     }
 }
 .logo {
-    animation: logo infinite 3s;
+    animation: logo infinite 2s;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes banner_content {
@@ -158,7 +155,7 @@ padding: 0.5rem 1rem; }
     50% {
         position: relative;
         right: 0;
-        transform: scale(2);
+        transform: scale(1.5);
     }
     100% {
         transform: scale(1);
@@ -302,31 +299,40 @@ header nav ul li.active a {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-
-.stats .container .stats_block {
-    display: inline-block;
-    margin-right: 70px;
+.stats .container {
+    display: flex;
+    justify-content: space-between;
 }
 
-.stats .container .stats_block div {
-    display: inline-block;
+.stats .stats_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats .stats_block:before {
+    font-family: "Font Awesome\ 5 Free";
+    font-weight: 900;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 38px;
+    text-align: center;
+    color: white;
+    margin-right: 30px;
+}
+.stats .stats_block:first-of-type:before    {content: "\f0b1";}
+.stats .stats_block:nth-child(2):before     {content: "\f017";}
+.stats .stats_block:nth-child(3):before     {content: "\f005";}
+.stats .stats_block:last-of-type:before     {content: "\f004";}
+
+.statsinfo {
     color: white;
     font-family: Montserrat;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
-.statspic {
-    margin-right: 30px;
-}
-
-.statsinfo h3 {
-    font-size: 18px;
-}
-
-.statsinfo span {
-    font-size: 12px;
-}
+.statsinfo h3   {font-size: 18px;}
+.statsinfo span {font-size: 12px;}
 
 .rew{
     background-color: #10c9c3;
