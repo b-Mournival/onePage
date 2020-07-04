@@ -371,27 +371,69 @@ header nav ul li.active a {
     bottom: -3px;
 }
 
-/*.advert {*/
-/*    padding-top: 55px;*/
-/*    margin-bottom: 60px;*/
-/*}*/
+.process {
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.process .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+.process h3 {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    color: #191919;
+    margin-bottom: 40px;
+}
+.process p {
+    font-family: "Nunito Sans";
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #787878;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto 45px;
+    line-height: 24px;
+}
 
-/*.advert .container {*/
-/*    padding-left: 30px;*/
-/*    padding-right: 30px;*/
-/*}*/
+.player {
+    height: 571px;
+    background-color: #e9e9e9;
+    position: relative;
+    border-radius: 5px;
+}
+.player:before {
+    content: "\f04b";
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 85px;
+    height: 85px;
+    font-size: 17px;
+    line-height: 85px;
+    background-color: #10c9c3;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -42px;
+    margin-top: -42px;
+}
 
-/*.advert .container img {*/
-/*    display: inline-block;*/
-/*    float: left;*/
-/*}*/
-
-/*.advert .container img:last-of-type {*/
-/*    float: right;*/
-/*}*/
-
-/*.advert .container:after {*/
-/*    clear: both;*/
-/*    content: "";*/
-/*    display: block;*/
-/*}*/
+.advert {
+    padding-top: 55px;
+    padding-bottom: 60px;
+    background-color: white;
+}
+.advert .container {
+    display: flex;
+    justify-content: space-between;
+}
